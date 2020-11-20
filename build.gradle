@@ -17,6 +17,7 @@ checkstyle {
     configFile = file("${rootProject.rootDir}/config/checkstyle/checkstyle.xml")
 }
 
+
 dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
     testImplementation 'org.testng:testng:7.2.0'
@@ -24,6 +25,12 @@ dependencies {
 
 application {
     mainClassName = 'github.actions.demo.java.App'
+}
+
+jar {
+    manifest {
+        attributes  'Main-Class': "${mainClassName}"
+    }
 }
 
 test {
