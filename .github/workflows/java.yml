@@ -25,9 +25,9 @@ jobs:
         path: build/reports/checkstyle/
     - name: Building the project
       run: ./gradlew build
-    - name: Artifact lite
+    - name: Submit Artifact
       uses: actions/upload-artifact@v2
       with:
         name: artifact
-        path: build/distributions/converter-boot-0.0.1-SNAPSHOT.zip
+        path: build/distributions/github-actions-demo-java-1.zip
   
