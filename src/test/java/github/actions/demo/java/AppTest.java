@@ -3,8 +3,8 @@
  */
 package github.actions.demo.java;
 
-import org.testng.annotations.*;
-import static org.testng.Assert.*;
+import org.testng.annotations.Test;
+import static org.testng.Assert.assertNotNull;
 
 public class AppTest {
     @Test public void appHasAGreeting() {

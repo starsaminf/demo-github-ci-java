@@ -4,6 +4,10 @@ plugins {
     id 'checkstyle'
 }
 
+group = 'demo.github.ci.java'
+version = '1'
+sourceCompatibility = '11'
+
 repositories {
     jcenter()
 }
